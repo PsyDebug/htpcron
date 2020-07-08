@@ -1,0 +1,20 @@
+{application, htpcron,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {htpcron_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy,
+    ecron,
+    crypto,
+    ssl,
+    jsx
+   ]},
+  {env,[]},
+  {modules, []},
+{inets, [{services, [{httpc, {}}]}]},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
