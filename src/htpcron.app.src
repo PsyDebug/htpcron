@@ -10,7 +10,8 @@
     ecron,
     crypto,
     ssl,
-    jsx
+    jsx,
+    inets
    ]},
   {env,[]},
   {modules, []},
