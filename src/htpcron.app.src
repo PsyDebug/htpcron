@@ -14,7 +14,6 @@
    ]},
   {env,[]},
   {modules, []},
-{inets, [{services, [{httpc, {}}]}]},
   {licenses, ["Apache 2.0"]},
   {links, []}
  ]}.
