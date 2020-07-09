@@ -12,7 +12,7 @@
 start(_StartType, _StartArgs) ->
 	Dispatch = cowboy_router:compile([
 		{'_', [
-			{"/", root_hdlr, []}
+			{"/task", root_hdlr, []}
 		]}
 	]),
 	{ok, _} = cowboy:start_clear(http, [{port, 8081}], #{

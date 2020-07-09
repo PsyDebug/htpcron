@@ -1,14 +1,13 @@
 {"1.1.0",
 [{<<"cowboy">>,
   {git,"https://github.com/ninenines/cowboy.git",
-       {ref,"de955079f90d52cc626baebb52154f116c1ab5dd"}},
+       {ref,"03d306e6d172eb272a564aa8626d4554d1046455"}},
   0},
  {<<"cowlib">>,
   {git,"https://github.com/ninenines/cowlib",
        {ref,"1b5539a1da1d39b110d81b118000f00bbedaf4b4"}},
   1},
  {<<"ecron">>,{pkg,<<"ecron">>,<<"0.5.3">>},0},
- {<<"gun">>,{pkg,<<"gun">>,<<"1.3.2">>},0},
  {<<"jsx">>,
   {git,"https://github.com/talentdeficit/jsx.git",
        {ref,"3074d4865b3385a050badf7828ad31490d860df5"}},
@@ -21,6 +20,5 @@
 [
 {pkg_hash,[
  {<<"ecron">>, <<"9EDF7C1FAF62E45E1F99E50B619C6B5368372DCE5A755D734D6175EBD6D1B95B">>},
- {<<"gun">>, <<"542064CBB9F613650B8A8100B3A927505F364FBE198B7A5A112868FF43F3E477">>},
  {<<"telemetry">>, <<"AE2718484892448A24470E6AA341BC847C3277BFB8D4E9289F7474D752C09C7F">>}]}
 ].
