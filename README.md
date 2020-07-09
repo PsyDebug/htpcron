@@ -1,11 +1,12 @@
 htpcron
 =====
 
-An OTP application
+Prototype of centralized cron for microservices
+
 
 Install
 -----
-  docker run --name htpcron -p 8081:8081 psydebug/htpcron:latest
+`docker run --name htpcron -p 8081:8081 psydebug/htpcron:latest`
   
 ## Start Task
 
