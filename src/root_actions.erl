@@ -1,8 +1,20 @@
 -module(root_actions).
 
--export([run_task/1,delete_task/1]).
+-export([action/1,delete_task/1]).
 
-run_task(TaskParams)->
+action(TaskParams)->
+    Res = case binary:bin_to_list(maps:get(<<"type">>,TaskParams)) of
+              "http" -> http_task(TaskParams);
+              "amqp" -> amqp_task(TaskParams);
+              _ -> {error,'unknown task type'}
+          end,
+    Res.
+
+amqp_task(TaskParams)->
+    io:fwrite("~p~n", [TaskParams]),
+    {status,'ok'}.
+
+http_task(TaskParams)->
     Ticket=binary:bin_to_list(maps:get(<<"ticket">>,TaskParams)),
     TaskName=binary:bin_to_list(maps:get(<<"task">>,TaskParams))
     ++"_of_"++  binary:bin_to_list(maps:get(<<"service-name">>,TaskParams)),

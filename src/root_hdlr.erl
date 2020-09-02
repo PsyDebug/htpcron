@@ -12,7 +12,7 @@ init(Req0, Opts) ->
 
 task(<<"POST">>, Data, Req) ->
   InputJson=maps:from_list(jsx:decode(Data)),
-  Res=root_actions:run_task(InputJson),
+  Res=root_actions:action(InputJson),
   io:format("run task ~p~n",[Res]),
 	cowboy_req:reply(200,
   #{<<"content-type">> =>
