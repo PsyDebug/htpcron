@@ -14,23 +14,24 @@ Install
 
 Http task example
 
-```{
+`{
   "service-name": "testcron-service",
   "task": "checker_every_min",
   "type": "http",
   "url": "http://localhost:8080/task",
   "ticket": "*/1 * * * *"
-}```
+}`
 
 Amqp task example
 
-```{
+`{
   "service-name": "testcron-service",
   "task": "checker_every_min",
   "type": "amqp",
+  "message": "{Activation over amqp message}",
   "queue": "cronq.test",
   "ticket": "*/1 * * * *"
-}```
+}`
 
 ## Delete Task
 
