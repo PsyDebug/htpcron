@@ -11,7 +11,7 @@
     crypto,
     ssl,
     jsx,
-    inets
+    inets, amqp_client
    ]},
   {env,[]},
   {modules, []},
